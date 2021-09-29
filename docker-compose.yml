@@ -5,7 +5,6 @@ services:
     build:
       context: .
       dockerfile: $PWD/Dockerfile
-    image: urls-rest-service
     ports:
       - 4000:4000
     environment:

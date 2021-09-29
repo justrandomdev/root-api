@@ -2,7 +2,7 @@
 
 ### Overview
 
-For this assessment I decided to build a very basic GraphQL API using Nodejs and TypeScript. 
+For this assessment I built a very basic GraphQL API using Nodejs,  TypeScript and Redis as a key-value store. 
 It allows a user to register and login. Other common options are REST and a less common option is gRPC. gRPC can be more efficient but the client and server are tightly coupled due to shared type definitions.   
 
 ### Why GraphQL?

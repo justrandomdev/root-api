@@ -9,7 +9,7 @@ It allows a user to register and login. Other common options are REST and a less
 
 GraphQL brings a few benefits over REST including:
 - The ability to request the exact payload you want, it doesn't under or over fetch
-- Data enrichment or fetching from multiple endpoints using REST results in multiple calls from teh front end. With GraphQL the full payload is resolved on the server side, even if its from multiple sources.
+- Data enrichment or fetching from multiple endpoints using REST results in multiple calls from the front end. With GraphQL the full payload is resolved on the server side, even if its from multiple sources.
 - GraphQL has nice introspection and documentation capabilites
 
 ### API usage

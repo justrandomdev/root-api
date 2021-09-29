@@ -21,14 +21,13 @@ export const UserResolvers: IResolvers = {
     }, 
     Mutation: {
         async register (_: void, args: MutationRegisterArgs, context: any): Promise<AuthResponse> {
-          let result = "Registration successful";
 
           //Add credentials
           try {
             await context.redisClient.set(`username:${args.email}`, args.password)
 
             return {
-              message: "Authenticated"
+              message: "Registration successful"
             }
           }
           catch(e) {

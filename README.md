@@ -16,7 +16,8 @@ GraphQL brings a few benefits over REST including:
 Install docker<br/>
 Install docker-compose<br/>
 run ```docker-compose up```<br/>
-When the app is running(You will see a message "GraphQL is running on http://0.0.0.0:4000/graphql") go to http://localhost:4000/graphql
+When the app is running(You will see a message "GraphQL is running on http://0.0.0.0:4000/graphql") go to http://localhost:4000/graphql<br/>
+*Note: It does take a while for the server to start because its running an npm install in the background*
 Click on "Query your server"
 
 This query will check credentials(admin@example.com has been pre loaded). If the login fails the message will be "Go away!".

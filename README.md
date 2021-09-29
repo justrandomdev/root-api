@@ -1,4 +1,4 @@
-## API assessment by Shaun Tame
+## Root API assessment
 
 ### Overview
 
@@ -13,7 +13,6 @@ GraphQL brings a few benefits over REST including:
 - GraphQL has nice introspection and documentation capabilites
 
 ### API usage
-Install node and npm<br/>
 Install docker<br/>
 Install docker-compose<br/>
 run ```docker-compose up```<br/>

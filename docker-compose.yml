@@ -1,0 +1,23 @@
+version: '3.0'
+
+services:
+  graph-api:
+    build:
+      context: .
+      dockerfile: $PWD/Dockerfile
+    image: urls-rest-service
+    ports:
+      - 4000:4000
+    environment:
+      PORT: 4000
+    depends_on:
+      - redis
+    volumes:
+      - .:/app
+
+
+  redis:
+    image: redis:alpine
+    ports:
+      - 6379:6379
+    

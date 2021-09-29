@@ -1,0 +1,9 @@
+# Create types to extend from
+# _empty is here because graph doesnt allow empty objects 
+type Query {
+    _empty: String
+}
+
+type Mutation {
+    _empty: String
+}

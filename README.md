@@ -13,9 +13,10 @@ GraphQL brings a few benefits over REST including:
 - GraphQL has nice introspection and documentation capabilites
 
 ### API usage
-Install docker
-Install docker-compose
-run docker-compose up
+Install node and npm<br/>
+Install docker<br/>
+Install docker-compose<br/>
+run ```docker-compose up```<br/>
 When the app is running(You will see a message "GraphQL is running on http://0.0.0.0:4000/graphql") go to http://localhost:4000/graphql
 Click on "Query your server"
 

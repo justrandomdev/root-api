@@ -152,6 +152,4 @@ export class RedisClient implements IKVStore {
   disconnect(): void {
     this._cache.disconnect();
   }
-
-  
 }

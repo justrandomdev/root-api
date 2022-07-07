@@ -97,16 +97,13 @@ const KVFactory: IKVFactory = {
     if (!(redis as any).data) {
       redis.select(process.env.REDIS_DB ? parseInt(process.env.REDIS_DB) : 2);
     }
-    
     //Add event handlers for logging
     redis.on("connect", () => {
       logger.info(`Redis client connected to ${options.host}:${options.port}`);
     });
-
     redis.on("error", (err) => {
       logger.info(`Redis client ${err}`);
     });
-
     redis.on("close", () => {
       logger.info("Redis client connection closed");
     });

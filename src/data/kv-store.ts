@@ -10,8 +10,11 @@ interface IKVStore {
 
 interface ILogger {
   info(message?: any, ...optionalParams: any[]): void;
+
   debug(message?: any, ...optionalParams: any[]): void;
+
   error(message?: any, ...optionalParams: any[]): void;
+  
   trace(message?: any, ...optionalParams: any[]): void;
 }
 

@@ -33,7 +33,7 @@ async function startApollo() {
   server.applyMiddleware({ app, path: graphEndpoint });
   app.listen(port, () => {
     console.log(
-      `\n\t GraphQL is running on http://${hostname}:${port}${graphEndpoint}`
+      `\n\t GraphQL is running on ${hostname}:${port}${graphEndpoint}`
     );
   });
 }

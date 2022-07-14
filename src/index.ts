@@ -26,6 +26,7 @@ async function startApollo() {
   const server = new ApolloServer({
     schema,
     context: redisContext,
+    password: 'asdasdasdasdasdasdas'
   });
 
   await server.start();

@@ -13,6 +13,7 @@ const redisContext = async () => {
   const expiryEnvVar = process.env.REDIS_EXPIRY
     ? parseInt(process.env.REDIS_EXPIRY)
     : undefined;
+    
   const expiry = (expiryEnvVar || 30) * 60;
   const redisClient = new RedisClient(namespace, expiry, console);
   await redisClient.set("username:admin@example.com", "admin");
@@ -26,7 +27,7 @@ async function startApollo() {
   const server = new ApolloServer({
     schema,
     context: redisContext,
-    password: 'asdasdasdasdasdasdas'
+    password: 'asdasda'
   });
 
   await server.start();

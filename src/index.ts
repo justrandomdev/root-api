@@ -39,6 +39,4 @@ async function startApollo() {
   });
 }
 
-
-
 startApollo();

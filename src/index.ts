@@ -7,6 +7,7 @@ const port = process.env.PORT || 4000;
 const hostname = process.env.SERVERHOST || "0.0.0.0";
 const graphEndpoint = process.env.ENDPOINT || "/graphql";
 
+
 const redisContext = async () => {
   const namespace = "graphql_api_";
   const expiryEnvVar = process.env.REDIS_EXPIRY
@@ -21,6 +22,7 @@ const redisContext = async () => {
 
 async function startApollo() {
   const app = express();
+
   const server = new ApolloServer({
     schema,
     context: redisContext,
@@ -29,10 +31,16 @@ async function startApollo() {
   await server.start();
   server.applyMiddleware({ app, path: graphEndpoint });
   app.listen(port, () => {
+
     console.log(
       `\n\t GraphQL is running on http://${hostname}:${port}${graphEndpoint}`
     );
+
   });
 }
+
+
+
+
 
 startApollo();

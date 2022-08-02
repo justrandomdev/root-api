@@ -4,4 +4,6 @@ import { UserResolvers } from './resolvers/UserResolver'
 
 //Merge resolvers into 1
 const resolverMap: IResolvers = merge(UserResolvers)
+
+
 export default resolverMap
